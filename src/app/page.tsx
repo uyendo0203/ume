@@ -92,12 +92,9 @@ export default function Home() {
               <span className="info__hello">Hello  I'm</span>
               <h2 className="info__name">Uyen Do! </h2>
               <h3 className="info__position ">
-                Frontend Developer
+
               </h3>
-              <p className="summary">I have over 5 years of experience developing complex e-commerce sites, js
-                frameworks, specializing in interface processing web responsive for desktop, tablet,
-                mobile. I can work independently, conscientiously, problem solving skills and
-                emotional balance. </p>
+              <p className="summary">I'm a Frontend engineer based in Vietnam with over 5 years of experience in the software industry. Passion for continuous learning and staying up-to-date with the latest design trends ensures, delivers high-quality work that meets the needs of clients. I also values feedback and constructive criticism, as it helps me identify areas for growth and refine my work. I believes that learning is a lifelong journey and is always eager to explore new techniques and approaches in my development work.</p>
               <div className="mt-7 flex justify-center">
                 <button className="btn-download">
                   <span className="icon ">
