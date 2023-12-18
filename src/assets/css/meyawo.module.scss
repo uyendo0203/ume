@@ -13311,7 +13311,7 @@ pre .code {
   }
 }
 .btn-link{
-  @apply  inline-flex items-center justify-center hover:text-white;
+  @apply  inline-flex items-center justify-center hover:text-white text-white;
 }
 
 .about {
@@ -13327,21 +13327,18 @@ pre .code {
 }
 
 .about-img-holder {
-  min-width: 400px;
-  max-width: 400px;
+  width: 35%;
   margin-right: 20px;
 }
 
 .about-img-holder .about-img {
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 15px;
 }
 
 .about-caption {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  flex: 1;
 }
 
 @media (max-width: 767.98px) {
