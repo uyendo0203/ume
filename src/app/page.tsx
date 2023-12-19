@@ -365,7 +365,6 @@ export default function () {
                                     size={50}
                                     className="form-control"
                                     placeholder="Your Name"
-                                    required=""
                                 />
                             </div>
                             <div className="form-group col-sm-6">
@@ -373,7 +372,6 @@ export default function () {
                                     type="email"
                                     className="form-control"
                                     placeholder="Enter Email"
-                                    requried=""
                                 />
                             </div>
                             <div className="form-group col-sm-12">
