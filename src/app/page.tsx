@@ -124,7 +124,7 @@ export default function () {
                                     <img
                                         src="/image-3.jpg"
                                         className="about-img"
-                                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                        alt="Project"
                                     />
                                 </div>
                                 <div className="about-caption">
@@ -133,6 +133,13 @@ export default function () {
                                     <p>
                                         I'm a Frontend engineer based in Vietnam with over 5 years of experience in the software industry. Passion for continuous learning and staying up-to-date with the latest design trends ensures, delivers high-quality work that meets the needs of clients. I also values feedback and constructive criticism, as it helps me identify areas for growth and refine my work. I believes that learning is a lifelong journey and is always eager to explore new techniques and approaches in my development work.
                                     </p>
+                                    <p> <u>Email</u> : 
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uyendo.0203@gmail.com" target="_blank">
+                                    uyendo.0203@gmail.com
+                                    </a>  <br />
+                                    <u>Skype</u> : <a href="skype:live:nhatrang234?chat" target="_blank">
+                                    live:nhatrang234 </a><br />
+                                    <u>Graduate</u> : University of Science HCM</p>
                                     <div className="flex gap-3 justify-center md:justify-start">
                                         {/* <button className="btn-rounded btn btn-outline-primary mt-4">
                                     Download CV
@@ -168,6 +175,7 @@ export default function () {
                                 <h6 className="title">Reactjs</h6>
                                 <h6 className="title">Nextjs</h6>
                                 <h6 className="title">Nuxtjs</h6>
+                                <h6 className="title">Directus</h6>
                                 <h6 className="title">Git and Version</h6>
                                 <h6 className="title">GitHub</h6>
                                 <h6 className="title">Motion UI</h6>
@@ -182,7 +190,7 @@ export default function () {
                                 <div className="body">
                                     <img
                                         src="imgs/pencil-case.svg"
-                                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                        alt="Project"
                                         className="icon"
                                     />
                                     <h6 className="title">Adipisicing</h6>
@@ -193,6 +201,7 @@ export default function () {
                         </div>
                     </section>
                     {/* end of service section */}
+
                     {/* section */}
                     <section className="section-sm bg-primary">
                         {/* container */}
@@ -216,13 +225,70 @@ export default function () {
                         {/* end of container */}
                     </section>{" "}
                     {/* end of section */}
+
+                    <section className="section" id="portfolio">
+                        <div className="container text-center">
+                            <p className="section-subtitle">What I Did ?</p>
+                            <h6 className="section-title mb-6">Some Projects</h6>
+                            {/* row */}
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <div className="portfolio-card">
+                                        <img
+                                            src="landingpage/1-bam.jpg"
+                                            className="portfolio-card-img"
+                                            alt="Project"
+                                        />
+                                        <span className="portfolio-card-overlay">
+                                            <span className="portfolio-card-caption">
+                                                <h4>BAM</h4>
+                                                <p className="font-weight-normal">HTML, SCSS, JQUERY, Responsive</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="portfolio-card">
+                                        <img
+                                            className="portfolio-card-img"
+                                            src="landingpage/2-BconsPlazaCode.jpg"
+                                            alt="Project"
+                                        />
+                                        <span className="portfolio-card-overlay">
+                                            <span className="portfolio-card-caption">
+                                                <h4>Bcons Plaza Code</h4>
+                                                <p className="font-weight-normal">HTML, SCSS, Responsive, React, Nextjs</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="portfolio-card">
+                                        <img
+                                            className="portfolio-card-img"
+                                            src="landingpage/10-Swancity.jpg"
+                                            alt="Project"
+                                        />
+                                        <span className="portfolio-card-overlay">
+                                            <span className="portfolio-card-caption">
+                                                <h4>Swancity</h4>
+                                                <p className="font-weight-normal">HTML, SCSS, Responsive, React, Nextjs</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* end of row */}
+                        </div>
+                        {/* end of container */}
+                    </section>
+
+
                     {/* blog section */}
-                    <section className="section" id="blog">
-                        {/* container */}
+                    {/* <section className="section" id="blog">
                         <div className="container text-center">
                             <p className="section-subtitle">Recent Posts?</p>
                             <h6 className="section-title mb-6">Blog</h6>
-                            {/* blog-wrapper */}
                             <div className="row">
                                 <div className="col-md-6 col-lg-4">
                                     <div className="blog-card">
@@ -271,54 +337,52 @@ export default function () {
                                     </div>
                                 </div>
                             </div>
-                            {/* end of blog wrapper */}
                         </div>
-                        {/* end of container */}
-                    </section>
+                    </section> */}
                     {/* end of blog section */}
                     {/* contact section */}
                     {/* <section className="section bg-primary" id="contact">
-                <div className="container text-center">
-                    <p className="section-subtitle text-white">How can you communicate?</p>
-                    <h6 className="section-title mb-5 text-white">Contact Me</h6>
-                    <form action="" className="contact-form col-md-10 col-lg-8 m-auto">
-                        <div className="form-row">
-                            <div className="form-group col-sm-6">
-                                <input
-                                    type="text"
-                                    size={50}
-                                    className="form-control"
-                                    placeholder="Your Name"
-                                />
-                            </div>
-                            <div className="form-group col-sm-6">
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    placeholder="Enter Email"
-                                />
-                            </div>
-                            <div className="form-group col-sm-12">
-                                <textarea
-                                    name="comment"
-                                    id="comment"
-                                    rows={6}
-                                    className="form-control"
-                                    placeholder="Write Something"
-                                    defaultValue={""}
-                                />
-                            </div>
-                            <div className="form-group col-sm-12 mt-3">
-                                <input
-                                    type="submit"
-                                    defaultValue="Send Message"
-                                    className="btn btn-light btn-rounded"
-                                />
-                            </div>
+                        <div className="container text-center">
+                            <p className="section-subtitle text-white">How can you communicate?</p>
+                            <h6 className="section-title mb-5 text-white">Contact Me</h6>
+                            <form action="" className="contact-form col-md-10 col-lg-8 m-auto">
+                                <div className="form-row">
+                                    <div className="form-group col-sm-6">
+                                        <input
+                                            type="text"
+                                            size={50}
+                                            className="form-control"
+                                            placeholder="Your Name"
+                                        />
+                                    </div>
+                                    <div className="form-group col-sm-6">
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            placeholder="Enter Email"
+                                        />
+                                    </div>
+                                    <div className="form-group col-sm-12">
+                                        <textarea
+                                            name="comment"
+                                            id="comment"
+                                            rows={6}
+                                            className="form-control"
+                                            placeholder="Write Something"
+                                            defaultValue={""}
+                                        />
+                                    </div>
+                                    <div className="form-group col-sm-12 mt-3">
+                                        <input
+                                            type="submit"
+                                            defaultValue="Send Message"
+                                            className="btn btn-light btn-rounded"
+                                        />
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
-                </div>
-            </section> */}
+                    </section> */}
                     {/* end of contact section */}
                     <footer className="footer text-center bg-primary">
                         <div className="container">
