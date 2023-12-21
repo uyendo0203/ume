@@ -26,6 +26,9 @@ const config: Config = {
       "black": "#000",
       "white": "#fff",
       "orange": "#ee5f38",
+      "yellow-dark": "#378265"
+      // "yellow-dark": "#1751a3"
+      // "yellow-dark": "#e6bd0f"
     },
   },
   plugins: [require("daisyui")],

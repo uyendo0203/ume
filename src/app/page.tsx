@@ -241,8 +241,8 @@ export default function () {
                                         />
                                         <span className="portfolio-card-overlay">
                                             <span className="portfolio-card-caption">
-                                                <h4>BAM</h4>
-                                                <p className="font-weight-normal">HTML, SCSS, JQUERY, Responsive</p>
+                                                <h5>BAM</h5>
+                                                <p className="portfolio-card-des">HTML, SCSS, JQUERY, Responsive</p>
                                             </span>
                                         </span>
                                     </div>
@@ -256,8 +256,8 @@ export default function () {
                                         />
                                         <span className="portfolio-card-overlay">
                                             <span className="portfolio-card-caption">
-                                                <h4>Bcons Plaza Code</h4>
-                                                <p className="font-weight-normal">HTML, SCSS, Responsive, React, Nextjs</p>
+                                                <h5>Bcons Plaza Code</h5>
+                                                <p className="portfolio-card-des">HTML, SCSS, Responsive, React, Nextjs</p>
                                             </span>
                                         </span>
                                     </div>
@@ -271,8 +271,8 @@ export default function () {
                                         />
                                         <span className="portfolio-card-overlay">
                                             <span className="portfolio-card-caption">
-                                                <h4>Swancity</h4>
-                                                <p className="font-weight-normal">HTML, SCSS, Responsive, React, Nextjs</p>
+                                                <h5>Swancity</h5>
+                                                <p className="portfolio-card-des">HTML, SCSS, Responsive, React, Nextjs</p>
                                             </span>
                                         </span>
                                     </div>
