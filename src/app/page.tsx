@@ -55,6 +55,20 @@ export default function () {
         setActiveNavToggle(!activeNavToggle)
     }
 
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        // first prevent the default behavior
+        e.preventDefault();
+        // get the href and remove everything before the hash (#)
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*\#/, "");
+        // get the element by id and use scrollIntoView
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      };
+
     return (
         loading ? <Loading /> :
             <>
@@ -67,25 +81,25 @@ export default function () {
                             </a>
                             <ul className={`nav ${activeNavToggle ? 'show' : ''}`}>
                                 <li className="item">
-                                    <a className="link" href="#home">
+                                    <a className="link" href="#home" onClick={handleScroll}>
                                         Home
                                     </a>
                                 </li>
                                 <li className="item">
-                                    <a className="link" href="#about">
+                                    <a className="link" href="#about" onClick={handleScroll}>
                                         About
                                     </a>
                                 </li>
                                 <li className="item">
-                                    <a className="link" href="#blog">
-                                        Blog
+                                    <a className="link" href="#service" onClick={handleScroll}>
+                                    Languages
                                     </a>
                                 </li>
-                                {/* <li className="item">
-                            <a className="link" href="#contact">
-                                Contact
-                            </a>
-                        </li> */}
+                                <li className="item">
+                                    <a className="link" href="#portfolio" onClick={handleScroll}>
+                                        Projects
+                                    </a>
+                                </li>
                                 <li className="item">
                                     <a target="_blank" className="btn-on-header btn-link btn btn-primary btn-rounded" href="https://uyendo.notion.site/Uyen-Do-86a2c735f87747479a529634542cce9b">Visit My Works</a>
                                 </li>

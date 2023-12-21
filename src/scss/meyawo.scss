@@ -3120,7 +3120,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   @apply font-normal text-white no-underline hover:no-underline;
-  @apply px-[2rem];
+  @apply px-[1.2rem] md:px-[2rem];
 }
 
 .btn-link:focus,
@@ -3152,8 +3152,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-on-header{
-  @apply bg-yellow-dark border-yellow-dark  #{!important}
+  @apply bg-yellow-dark border-yellow-dark #{!important}
 }
+
+@media (max-width: 991.98px) {
+  .btn-on-header{
+    @apply h-auto min-h-max pb-[0.2rem] #{!important}
+  }
+}
+
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
@@ -11048,7 +11055,7 @@ pre .code {
 }
 
 .custom-navbar .nav .item {
-  @apply mx-2.5 my-0 md:opacity-0 md:invisible md:translate-y-[-50px] md:translate-y-[-50px];
+  @apply mx-2.5 my-0 md:opacity-0 md:invisible md:translate-y-[-50px];
 }
 
 .custom-navbar .nav .item .link {
@@ -11077,6 +11084,13 @@ pre .code {
 .custom-navbar.affix .nav .item .link {
   @apply text-[#6c757d];
 }
+
+@media (max-width: 991.98px) {
+  .custom-navbar .nav .item{
+    @apply flex justify-center
+  }
+}
+
 
 .custom-navbar.affix .hamburger-inner,
 .custom-navbar.affix .hamburger-inner::before,
@@ -11266,7 +11280,7 @@ pre .code {
   }
 
   .custom-navbar .nav .item .link {
-    @apply block text-[#6c757d] px-3 py-[7px];
+    @apply block text-[#6c757d] px-3 py-[7px] text-center;
   }
 }
 
