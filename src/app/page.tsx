@@ -5,12 +5,10 @@ import Loading from "./loading";
 
 
 export default function () {
-
-    const [activeNavToggle, setActiveNavToggle] = useState(false)
-    const [fixed, setFixed] = useState(true)
-    const [isMenuFixed, setIsMenuFixed] = useState(false);
-
     const [loading, setLoading] = useState(false)
+    const [fixed, setFixed] = useState(true)
+    const [activeNavToggle, setActiveNavToggle] = useState(false)
+    const [isMenuFixed, setIsMenuFixed] = useState(false);
 
     // smooth scroll
     useEffect(() => {
@@ -64,10 +62,10 @@ export default function () {
         // get the element by id and use scrollIntoView
         const elem = document.getElementById(targetId);
         elem?.scrollIntoView({
-          behavior: "smooth",
-          block: "center"
+            behavior: "smooth",
+            block: "center"
         });
-      };
+    };
 
     return (
         loading ? <Loading /> :
@@ -92,7 +90,7 @@ export default function () {
                                 </li>
                                 <li className="item">
                                     <a className="link" href="#service" onClick={handleScroll}>
-                                    Languages
+                                        Languages
                                     </a>
                                 </li>
                                 <li className="item">
@@ -147,13 +145,13 @@ export default function () {
                                     <p>
                                         I'm a Frontend engineer based in Vietnam with over 5 years of experience in the software industry. Passion for continuous learning and staying up-to-date with the latest design trends ensures, delivers high-quality work that meets the needs of clients. I also values feedback and constructive criticism, as it helps me identify areas for growth and refine my work. I believes that learning is a lifelong journey and is always eager to explore new techniques and approaches in my development work.
                                     </p>
-                                    <p> <u>Email</u> : 
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uyendo.0203@gmail.com" target="_blank">
-                                    uyendo.0203@gmail.com
-                                    </a>  <br />
-                                    <u>Skype</u> : <a href="skype:live:nhatrang234?chat" target="_blank">
-                                    live:nhatrang234 </a><br />
-                                    <u>Graduate</u> : University of Science HCM</p>
+                                    <p> <u>Email</u> :
+                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uyendo.0203@gmail.com" target="_blank">
+                                            uyendo.0203@gmail.com
+                                        </a>  <br />
+                                        <u>Skype</u> : <a href="skype:live:nhatrang234?chat" target="_blank">
+                                            live:nhatrang234 </a><br />
+                                        <u>Graduate</u> : University of Science HCM</p>
                                     <div className="flex gap-3 justify-center md:justify-start">
                                         {/* <button className="btn-rounded btn btn-outline-primary mt-4">
                                     Download CV

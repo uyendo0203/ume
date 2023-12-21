@@ -13,7 +13,7 @@ import { useRouter } from 'next/router';
 export const metadata: Metadata = {
   title: 'tudo',
   icons: [{ rel: 'icon', url: Favicon.src }],
-  description: "I'm Uyen. This is my site with Frontend Developer",
+  description: "Call me Uyen, I'm a Frontend Developer. I try to learn day by day!!!",
 }
 
 
