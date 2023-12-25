@@ -2703,7 +2703,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  @apply text-white bg-yellow-dark border-yellow-dark hover:text-white hover:bg-[#594c8d] hover:border-[#544885];
+  @apply text-white bg-yellow-dark border-yellow-dark hover:text-white hover:bg-[#378265eb] hover:border-[#544885];
 }
 
 .btn-primary:focus,
@@ -10670,6 +10670,7 @@ p {
 /*/ portfolio wrapper */
 .portfolio-card {
   @apply block relative overflow-hidden max-h-[300px];
+  @apply border-[#ddd] border-[1px] border
 }
 
 .portfolio-card .portfolio-card-img {

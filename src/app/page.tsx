@@ -4,11 +4,91 @@ import { useEffect, useState } from "react"
 import Loading from "./loading";
 
 
+const services = [
+    "HTML", "CSS / CSS3", "SCSS/SASS", "JavaScript", "jQuery", "Bootstraps", "Tailwind", "Reactjs", "Nextjs", "Nuxtjs", "Directus", "Motion UI", "Responsive design", "Testing and debugging", "Email template", "Git and Version", "GitHub"
+]
+const projects = [
+    {
+        "img": "landingpage/1-bam.jpg",
+        "name": "BAM",
+        // "des": "HTML, SCSS, JQUERY, Responsive"
+    },
+    {
+        "img": "landingpage/2-BconsPlazaCode.jpg",
+        "name": "Bcons Plaza Code",
+        // "des": "HTML, SCSS, Responsive, React, Nextjs"
+    },
+    {
+        "img": "landingpage/10-Swancity.jpg",
+        "name": "Swancity",
+        // "des": "HTML, SCSS, Responsive, React, Nextjs"
+    },
+    {
+        "img": "landingpage/3-AmazonNIC.png",
+        "name": "Amazon NIC",
+        "des": "xxx"
+    },
+    {
+        "img": "landingpage/5-freeplus.jpg",
+        "name": "Freeplus",
+        "des": "xxx"
+    },
+    {
+        "img": "landingpage/6-gastro.png",
+        "name": "Gastro",
+        "des": "xxx"
+    },
+    {
+        "img": "landingpage/7-Ichni.jpg",
+        "name": "Ichni",
+        "des": "xxx"
+    },
+    {
+        "img": "landingpage/8-Oasia.jpg",
+        "name": "Oasia",
+        "des": "xxx"
+    },
+    {
+        "img": "landingpage/9-SkyResturant.jpg",
+        "name": "Sky Resturant",
+        "des": "xxx"
+    },
+    // {
+    //     "img": "landingpage/11-Taisun.png",
+    //     "name": "Taisun",
+    //     "des": "xxx"
+    // },
+    // {
+    //     "img": "landingpage/12-teco.png",
+    //     "name": "Teco",
+    //     "des": "xxx"
+    // },
+    // {
+    //     "img": "landingpage/15-victoria.png",
+    //     "name": "Victoria",
+    //     "des": "xxx"
+    // },
+    {
+        "img": "landingpage/10-Swancity.jpg",
+        "name": "Swancity",
+        "des": "xxx"
+    },
+    {
+        "img": "landingpage/13-Verosa.jpg",
+        "name": "Verosa",
+        "des": "xxx"
+    },
+]
+
 export default function () {
     const [loading, setLoading] = useState(false)
     const [fixed, setFixed] = useState(true)
     const [activeNavToggle, setActiveNavToggle] = useState(false)
     const [isMenuFixed, setIsMenuFixed] = useState(false);
+
+    const [listServices, setListServices] = useState(services)
+    const [listProjects, setListProjects] = useState(projects)
+
 
     // smooth scroll
     useEffect(() => {
@@ -177,39 +257,14 @@ export default function () {
                             <h6 className="section-title mb-6">Languages</h6>
                             {/* row */}
                             <div className="flex flex-wrap justify-center gap-2">
-                                <h6 className="title">HTML</h6>
-                                <h6 className="title">CSS / CSS3</h6>
-                                <h6 className="title">SCSS/SASS</h6>
-                                <h6 className="title">JavaScript</h6>
-                                <h6 className="title">jQuery</h6>
-                                <h6 className="title">Bootstraps</h6>
-                                <h6 className="title">Tailwind</h6>
-                                <h6 className="title">Reactjs</h6>
-                                <h6 className="title">Nextjs</h6>
-                                <h6 className="title">Nuxtjs</h6>
-                                <h6 className="title">Directus</h6>
-                                <h6 className="title">Git and Version</h6>
-                                <h6 className="title">GitHub</h6>
-                                <h6 className="title">Motion UI</h6>
-                                <h6 className="title">Responsive design</h6>
-                                <h6 className="title">Testing and debugging</h6>
-                                <h6 className="title">Email template</h6>
+                                {
+                                    listServices && listServices.length && listServices.length > 0 && listServices.map((item, index) => {
+                                        return (
+                                            <h6 key={index} className="title">{item}</h6>
+                                        )
+                                    })
+                                }
                             </div>
-
-                            {/* <div className="row">
-                        <div className="col-md-6 col-lg-2">
-                            <div className="service-card">
-                                <div className="body">
-                                    <img
-                                        src="imgs/pencil-case.svg"
-                                        alt="Project"
-                                        className="icon"
-                                    />
-                                    <h6 className="title">Adipisicing</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                         </div>
                     </section>
                     {/* end of service section */}
@@ -231,11 +286,11 @@ export default function () {
                                         Hire Me
                                     </a>
                                 </div>
-                            </div>{" "}
+                            </div>
                             {/* end of row */}
-                        </div>{" "}
+                        </div>
                         {/* end of container */}
-                    </section>{" "}
+                    </section>
                     {/* end of section */}
 
                     <section className="section" id="portfolio">
@@ -244,51 +299,28 @@ export default function () {
                             <h6 className="section-title mb-6">Some Projects</h6>
                             {/* row */}
                             <div className="row">
-                                <div className="col-md-4">
-                                    <div className="portfolio-card">
-                                        <img
-                                            src="landingpage/1-bam.jpg"
-                                            className="portfolio-card-img"
-                                            alt="Project"
-                                        />
-                                        <span className="portfolio-card-overlay">
-                                            <span className="portfolio-card-caption">
-                                                <h5>BAM</h5>
-                                                <p className="portfolio-card-des">HTML, SCSS, JQUERY, Responsive</p>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="portfolio-card">
-                                        <img
-                                            className="portfolio-card-img"
-                                            src="landingpage/2-BconsPlazaCode.jpg"
-                                            alt="Project"
-                                        />
-                                        <span className="portfolio-card-overlay">
-                                            <span className="portfolio-card-caption">
-                                                <h5>Bcons Plaza Code</h5>
-                                                <p className="portfolio-card-des">HTML, SCSS, Responsive, React, Nextjs</p>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="portfolio-card">
-                                        <img
-                                            className="portfolio-card-img"
-                                            src="landingpage/10-Swancity.jpg"
-                                            alt="Project"
-                                        />
-                                        <span className="portfolio-card-overlay">
-                                            <span className="portfolio-card-caption">
-                                                <h5>Swancity</h5>
-                                                <p className="portfolio-card-des">HTML, SCSS, Responsive, React, Nextjs</p>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
+
+                                {
+                                    listProjects && listProjects.length && listProjects.length > 0 && listProjects.map((item, index) => {
+                                        return (
+                                            <div key={index} className="col-md-4">
+                                                <div className="portfolio-card mb-4">
+                                                    <img
+                                                        src={item.img}
+                                                        className="portfolio-card-img"
+                                                        alt={item.name}
+                                                    />
+                                                    <span className="portfolio-card-overlay">
+                                                        <span className="portfolio-card-caption">
+                                                            <h5>{item.name}</h5>
+                                                            {/* <p className="portfolio-card-des">{item.des}</p> */}
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
                             </div>
                             {/* end of row */}
                         </div>
